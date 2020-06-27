@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%# ##_headを読み込み## %>
+  <%- include('./_head.ejs', {CONFIG: config["story"]}); %>
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "@id": "https://youlog.net/dist-3rd-last/story.html",
+                "name": "STORY-練習用サイト",
+                "description": "STORYのディスクリプションです。"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement":
+        [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://youlog.net/dist-3rd-last/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "STORY",
+            "item": "https://youlog.net/dist-3rd-last/story.html"
+          }
+        ]
+      }
+    ]
+  </script>
+</head>
+
+<body class="ly_bgImg" style="background-image: url('./img/backgroungImage@2x.jpg');">
+
+  <!-- HEADER -->
+  <%# ----------------_headerを読み込む---------------- %>
+  <%- include('./_header.ejs') %>
+  <!-- / HEADER -->
+
+  <main>
+    <!-- FIRST VIEW BG -->
+    <div class="ly_noRepeatBgImg" style="background-image: url('./img/first-view_story_bgImg@2x.jpg');">
+      <div class="bl_firstViewShort">
+
+        <!-- / FIRST VIEW -->
+        <div class="ly_container ly_container__paddingContents">
+          <div class="bl_firstViewShort_inner">
+            <figure class="bl_firstViewShort_ttl">
+              <img class="bl_firstViewShort_ttlImg" src="./img/title@2x.png" alt="世界最長の叙事詩をピーター・ブルック以来の全編舞台化 完全版マハーバラタ">
+            </figure>
+            <figure class="bl_firstViewShort_schedule">
+              <img class="bl_firstViewShort_scheduleImg" src="./img/schedule@2x.png" alt="2020年7月4日～7日なかのZERO大ホール">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- / FIRST VIEW -->
+
+      <!-- FIRST VIEW BTN -->
+      <%# ----------------_first-view-btnを読み込む---------------- %>
+      <%- include('./_first-view-btn.ejs') %>
+      <!-- / FIRST VIEW BTN -->
+
+
+      <!-- BREADCRUMBS -->
+      <nav class="ly_container ly_container__paddingContents bl_breadcrumbs bl_breadcrumbs__white">
+        <ol class="bl_breadcrumbs_ol" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="bl_breadcrumbs_li" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="bl_breadcrumbs_link" href="https://youlog.net/3rdLast/index.html" itemprop="item">
+              <span class="bl_breadcrumbs_txt" itemprop="name">ホーム</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li class="bl_breadcrumbs_li" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span class="bl_breadcrumbs_txt" itemprop="name">STORY</span>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>
+      </nav>
+      <!-- / BREADCRUMBS -->
+
+      <!-- STORY -->
+      <section class="bl_story">
+        <div class="ly_container ly_container__paddingContents">
+          <h1 class="el_h2">STORY</h1>
+          <div class="bl_story_inner">
+            <div class="bl_story_contArea">
+              <div class="bl_story_headingArea">
+                <h2 class="el_h2">小見出し</h2>
+              </div>
+              <!-- / .btn_story_headingArea -->
+              <div class="bl_story_txtArea">
+                <p>
+                  マハー（偉大な）、バーラタ（バラタ族）、つまり「偉大なバラタ族」の物語。神々が人間界を作り出すところから始まり、バラタ族の中のクル家とパーンドゥ家という二つの部族間の対立を巡るストーリー。神の血を引く個性豊かな登場人物たちによる差別、対立、欲望、嫉妬など、生の苦しみが描かれ、最終的には一族が破滅していく。
+                </p>
+                <p>
+                  世界的な文学作品古代ギリシャの「イーリアス」「オデュッセイア」と並ぶ世界三大叙事詩の一つに数えられており、「ラーマーヤナ」と双璧を成すインド二大叙事詩の一つ。原語はサンスクリット語であるが、全18巻、10万詩節を超えるその長さは聖書の約4倍と言われ、原典の日本語訳はいまだ完結していない。
+                </p>
+                <p>
+                  インドだけでなくアジア全般で広く知られた作品であり、TVドラマや映画の原案として使われることも多い。全編舞台化の難しさ日本では、イギリスの演出家ピーター・ブルックがワールドツアーの一環として1988年6月に銀座セゾン劇場で上演。三部作であったが、上演時間は9時間にも及んだ。
+                </p>
+                <p>
+                  日本人の作品としては演出家・宮城聰が『マハーバーラタ～ナラ王の冒険』や歌舞伎作品『極付印度伝マハーバーラタ戦記』として、「マハーバーラタ」の長大なストーリーの一部分を舞台化した。全編上映はブルック以外にめぼしい作品は世界的にも存在しない。
+                </p>
+              </div>
+              <!-- / .btn_story_txtArea -->
+            </div>
+            <!-- / .bl_story_contArea -->
+          </div>
+          <!-- / .bl_story_inner -->
+        </div>
+        <!-- / .ly_container.ly_container__paddingContents -->
+      </section>
+      <!-- / STORY -->
+    </div>
+    <!-- FIRST VIEW BG -->
+
+    <!-- STORY -->
+    <div class="bl_story_wrapper bl_story__alternate">
+      <div class="ly_container ly_container__paddingContents bl_story">
+        <div class="bl_story_inner">
+          <div class="bl_story_contArea">
+            <div class="bl_story_headingArea">
+            </div>
+            <!-- / .btn_story_headingArea -->
+            <div class="bl_story_txtArea">
+              <p>
+                マハー（偉大な）、バーラタ（バラタ族）、つまり「偉大なバラタ族」の物語。神々が人間界を作り出すところから始まり、バラタ族の中のクル家とパーンドゥ家という二つの部族間の対立を巡るストーリー。神の血を引く個性豊かな登場人物たちによる差別、対立、欲望、嫉妬など、生の苦しみが描かれ、最終的には一族が破滅していく。
+              </p>
+              <p>
+                世界的な文学作品古代ギリシャの「イーリアス」「オデュッセイア」と並ぶ世界三大叙事詩の一つに数えられており、「ラーマーヤナ」と双璧を成すインド二大叙事詩の一つ。原語はサンスクリット語であるが、全18巻、10万詩節を超えるその長さは聖書の約4倍と言われ、原典の日本語訳はいまだ完結していない。
+              </p>
+              <p>
+                インドだけでなくアジア全般で広く知られた作品であり、TVドラマや映画の原案として使われることも多い。全編舞台化の難しさ日本では、イギリスの演出家ピーター・ブルックがワールドツアーの一環として1988年6月に銀座セゾン劇場で上演。三部作であったが、上演時間は9時間にも及んだ。
+              </p>
+              <p>
+                日本人の作品としては演出家・宮城聰が『マハーバーラタ～ナラ王の冒険』や歌舞伎作品『極付印度伝マハーバーラタ戦記』として、「マハーバーラタ」の長大なストーリーの一部分を舞台化した。全編上映はブルック以外にめぼしい作品は世界的にも存在しない。
+              </p>
+            </div>
+            <!-- / .btn_story_txtArea -->
+          </div>
+          <!-- / .bl_story_contArea -->
+        </div>
+        <!-- / .bl_story_inner -->
+      </div>
+      <!-- / .bl_story -->
+      <figure class="bl_story_bgImgWrapper">
+        <img src="./img/story_01_bgImg@2x.jpg" class="bl_story_bgImg" alt="">
+      </figure>
+    </div>
+    <!-- / STORY -->
+
+    <!-- STORY -->
+    <div class="bl_story_wrapper bl_story__alternate">
+      <div class="ly_container ly_container__paddingContents bl_story">
+        <div class="bl_story_inner">
+          <div class="bl_story_contArea">
+            <div class="bl_story_headingArea">
+            </div>
+            <!-- / .btn_story_headingArea -->
+            <div class="bl_story_txtArea">
+              <p>
+                マハー（偉大な）、バーラタ（バラタ族）、つまり「偉大なバラタ族」の物語。神々が人間界を作り出すところから始まり、バラタ族の中のクル家とパーンドゥ家という二つの部族間の対立を巡るストーリー。神の血を引く個性豊かな登場人物たちによる差別、対立、欲望、嫉妬など、生の苦しみが描かれ、最終的には一族が破滅していく。
+              </p>
+              <p>
+                世界的な文学作品古代ギリシャの「イーリアス」「オデュッセイア」と並ぶ世界三大叙事詩の一つに数えられており、「ラーマーヤナ」と双璧を成すインド二大叙事詩の一つ。原語はサンスクリット語であるが、全18巻、10万詩節を超えるその長さは聖書の約4倍と言われ、原典の日本語訳はいまだ完結していない。
+              </p>
+              <p>
+                インドだけでなくアジア全般で広く知られた作品であり、TVドラマや映画の原案として使われることも多い。全編舞台化の難しさ日本では、イギリスの演出家ピーター・ブルックがワールドツアーの一環として1988年6月に銀座セゾン劇場で上演。三部作であったが、上演時間は9時間にも及んだ。
+              </p>
+              <p>
+                日本人の作品としては演出家・宮城聰が『マハーバーラタ～ナラ王の冒険』や歌舞伎作品『極付印度伝マハーバーラタ戦記』として、「マハーバーラタ」の長大なストーリーの一部分を舞台化した。全編上映はブルック以外にめぼしい作品は世界的にも存在しない。
+              </p>
+            </div>
+            <!-- / .btn_story_txtArea -->
+          </div>
+          <!-- / .bl_story_contArea -->
+        </div>
+        <!-- / .bl_story_inner -->
+      </div>
+      <!-- / .bl_story -->
+      <figure class="bl_story_bgImgWrapper">
+        <img src="./img/story_02_bgImg@2x.jpg" class="bl_story_bgImg" alt="">
+      </figure>
+    </div>
+    <!-- / STORY -->
+
+    <!-- STORY -->
+    <div class="bl_story_wrapper bl_story__alternate">
+      <div class="ly_container ly_container__paddingContents bl_story">
+        <div class="bl_story_inner">
+          <div class="bl_story_contArea">
+            <div class="bl_story_headingArea">
+            </div>
+            <!-- / .btn_story_headingArea -->
+            <div class="bl_story_txtArea">
+              <p>
+                マハー（偉大な）、バーラタ（バラタ族）、つまり「偉大なバラタ族」の物語。神々が人間界を作り出すところから始まり、バラタ族の中のクル家とパーンドゥ家という二つの部族間の対立を巡るストーリー。神の血を引く個性豊かな登場人物たちによる差別、対立、欲望、嫉妬など、生の苦しみが描かれ、最終的には一族が破滅していく。
+              </p>
+              <p>
+                世界的な文学作品古代ギリシャの「イーリアス」「オデュッセイア」と並ぶ世界三大叙事詩の一つに数えられており、「ラーマーヤナ」と双璧を成すインド二大叙事詩の一つ。原語はサンスクリット語であるが、全18巻、10万詩節を超えるその長さは聖書の約4倍と言われ、原典の日本語訳はいまだ完結していない。
+              </p>
+              <p>
+                インドだけでなくアジア全般で広く知られた作品であり、TVドラマや映画の原案として使われることも多い。全編舞台化の難しさ日本では、イギリスの演出家ピーター・ブルックがワールドツアーの一環として1988年6月に銀座セゾン劇場で上演。三部作であったが、上演時間は9時間にも及んだ。
+              </p>
+              <p>
+                日本人の作品としては演出家・宮城聰が『マハーバーラタ～ナラ王の冒険』や歌舞伎作品『極付印度伝マハーバーラタ戦記』として、「マハーバーラタ」の長大なストーリーの一部分を舞台化した。全編上映はブルック以外にめぼしい作品は世界的にも存在しない。
+              </p>
+            </div>
+            <!-- / .btn_story_txtArea -->
+          </div>
+          <!-- / .bl_story_contArea -->
+        </div>
+        <!-- / .bl_story_inner -->
+      </div>
+      <!-- / .bl_story -->
+      <figure class="bl_story_bgImgWrapper">
+        <img src="./img/story_03_bgImg@2x.jpg" class="bl_story_bgImg" alt="">
+      </figure>
+    </div>
+    <!-- / STORY -->
+
+    <!-- SCHEDULE -->
+    <%# ----------------_scheduleを読み込む---------------- %>
+    <%- include('./_schedule.ejs') %>
+    <!-- SCHEDULE -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <%# ----------------_footerを読み込む---------------- %>
+  <%- include('./_footer.ejs') %>
+  <!-- FOOTER -->
+
+</body>
+
+</html>

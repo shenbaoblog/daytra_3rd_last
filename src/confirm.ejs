@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%# ##_headを読み込み## %>
+  <%- include('./_head.ejs', {CONFIG: config["confirm"]}); %>
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "@id": "https://youlog.net/dist-3rd-last/confirm.html",
+                "name": "CONFIRM-練習用サイト",
+                "description": "CONFIRMのディスクリプションです。"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement":
+        [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://youlog.net/dist-3rd-last/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CONFIRM",
+            "item": "https://youlog.net/dist-3rd-last/confirm.html"
+          }
+        ]
+      }
+    ]
+  </script>
+</head>
+
+<body class="ly_bgImg" style="background-image: url('./img/backgroungImage@2x.jpg');">
+
+  <!-- HEADER -->
+  <%# ----------------_headerを読み込む---------------- %>
+  <%- include('./_header.ejs') %>
+  <!-- / HEADER -->
+
+
+
+  <main>
+
+    <!-- FIRST VIEW -->
+    <%# ----------------_first-view-shortを読み込む---------------- %>
+    <%- include('./_first-view-short.ejs') %>
+    <!-- / FIRST VIEW -->
+
+    <!-- FIRST VIEW BTN -->
+    <%# ----------------_first-view-btnを読み込む---------------- %>
+    <%- include('./_first-view-btn.ejs') %>
+    <!-- FIRST VIEW BTN -->
+
+    <!-- BREADCRUMBS -->
+    <nav class="ly_container ly_container__paddingContents bl_breadcrumbs">
+      <ol class="bl_breadcrumbs_ol" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li class="bl_breadcrumbs_li" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a class="bl_breadcrumbs_link" href="https://youlog.net/3rdLast/index.html" itemprop="item">
+            <span class="bl_breadcrumbs_txt" itemprop="name">ホーム</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li class="bl_breadcrumbs_li" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span class="bl_breadcrumbs_txt" itemprop="name">INQUIRY</span>
+          <meta itemprop="position" content="2" />
+        </li>
+      </ol>
+    </nav>
+    <!-- / BREADCRUMBS -->
+
+    <!-- INQUIRY -->
+    <section class="ly_container ly_container__paddingContents bl_inquiry_wrapper">
+      <div class="bl_inquiry">
+        <h1 class="el_h2">INQUIRY</h1>
+
+        <div class="bl_inquiry_outer hp_bgOpacityWhite">
+          <p class="bl_inquiry_confirm">
+            お問い合わせありがとうございました。<br>
+            メッセージは正常に送信されました。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- / INQUIRY -->
+
+    <!-- NEWS -->
+    <%# ----------------_news-smallを読み込む---------------- %>
+    <%- include('./_news-small.ejs') %>
+    <!-- / NEWS -->
+
+    <!-- SCHEDULE -->
+    <%# ----------------_scheduleを読み込む---------------- %>
+    <%- include('./_schedule.ejs') %>
+    <!-- SCHEDULE -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <%# ----------------_footerを読み込む---------------- %>
+  <%- include('./_footer.ejs') %>
+  <!-- FOOTER -->
+
+</body>
+
+</html>
